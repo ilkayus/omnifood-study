@@ -1,0 +1,117 @@
+/* big tablest to 1280px : from 1023 to 1280 px -smaller than 1140px- */
+@media only screen and (max-width: 1280px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* Small tablest to big tablet : from 767 to 1023 px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .steps-box {
+    margin-top: 10px;
+  }
+  .works-steps {
+    margin-bottom: 40px;
+  }
+  .btn-app img {
+    height: 40px;
+    margin: 0 5px;
+    transition: height 0.3s;
+  }
+
+  .btn-app img:hover {
+    height: 45px;
+  }
+  .city-feature ion-icon {
+    margin-top: 10px;
+    width: 20px;
+    font-size: 100%;
+    line-height: 100%;
+  }
+  .section-cities {
+    font-size: 90%;
+  }
+  .plan-box {
+    width: 100%;
+    margin: 0;
+    font-size: 90%;
+  }
+}
+
+/* Small phones to small tablets : from 480 to 767 px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .row,
+  .hero-text-box {
+    padding: 0 3%;
+  }
+  .col {
+    width: 100%;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-nav {
+    display: none;
+    float: left;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  .main-nav li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: none;
+    padding: 10px;
+  }
+  .app-screen-parent {
+    display: none;
+  }
+  .works-steps div {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 2px;
+    margin-right: 10px;
+  }
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+  .sticky .icon-nav {
+    color: #555;
+  }
+}
+
+/* Small -old- phones : from 0 to 480 px */
+/* @media only screen and (max-width: 480px) {
+} */
