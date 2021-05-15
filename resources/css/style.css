@@ -15,6 +15,7 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 .clear-fix {
@@ -27,6 +28,12 @@ html {
   height: 0;
   display: block;
 }
+.hidden {
+  opacity: 0;
+}
+.hidden-none {
+  display: none;
+}
 /* ------------------------------------------------------ */
 /* NAVIGATION */
 /* ------------------------------------------------------ */
@@ -36,6 +43,8 @@ html {
   float: left;
   margin-top: 20px;
 }
+
+/* Main Navi */
 .main-nav {
   float: right;
   list-style: none;
@@ -59,6 +68,58 @@ html {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky Navi */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 2px #eee;
+  z-index: 9999;
+}
+.sticky .main-nav {
+  margin-top: 1px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 10px 0;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 75%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sticky .logo-black {
+  display: block;
+}
+.sticky .logo {
+  display: none;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-nav {
+  font-size: 200%;
+  color: #fff;
+}
+
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */
